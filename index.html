@@ -1,0 +1,142 @@
+<!-- <p id="one">Hello</p>
+
+<script>
+  //select paragraph tag using id//
+  var para = document.getElementById("one");
+  console.log(para.textContent);
+  para.textContent = "Bye";
+</script> -->
+
+<!-- <h1 id="title">Hello World</h1>
+<button onclick="change()">Change</button>
+
+<script>
+  var one = document.getElementById("title");
+  console.log(one.textContent);
+  //   one.textContent = "Bye World";
+
+  function change() {
+    one.textContent = "Bye World";
+  }
+</script> -->
+
+<!-- <input id="num1" />
+<input id="num2" />
+<button onclick="resultfunction()">ADD</button>
+<p id="result">Result</p>
+
+<script>
+  //script input box1
+  //script input box2
+  var box1 = document.getElementById("num1");
+  var box2 = document.getElementById("num2");
+  //selecting reult
+  var result = document.getElementById("result");
+
+  function resultfunction() {
+    var box1value = Number(box1.value);
+    var box2value = Number(box2.value);
+
+    var total = box1value + box2value;
+    result.textContent = total;
+  }
+</script> -->
+
+<!-- <h1>Guess the number from 1 to 10</h1>
+<input id="guestnumber" />
+<button onclick="check()">Check</button>
+<p id="result">You're wrong/Right</p>
+<p id="score">Score:10</p>
+
+<script>
+  //selecting input numbers
+  var guestnumber = document.getElementById("guestnumber");
+  var para = document.getElementById("result");
+  var score = document.getElementById("score");
+  var randomnumber = Math.floor(math.random() * 10) + 1;
+  var totalscore = 10;
+
+  function check() {
+    var enterdnumber = guestnumber.value;
+    if (randomnumber == enterdnumber) {
+      console.log("right");
+      result.textContent = "right";
+      alert("YOU WON...");
+    } else {
+      //   console.log("wrong");
+      //   result.textContent = "Worong";
+      totalscore = totalscore - 1;
+      score.textContent = "score" + totalscore;
+      result.textContent = "wrong";
+    }
+  }
+</script> -->
+
+<!-- TASK 01 -->
+<!-- <input id="inputbox" onkeyup="update()" />
+<h1 id="result"></h1>
+<script>
+  //select input tag
+  //select h1 tag
+  var inputbox = document.getElementById("inputbox");
+  var result = document.getElementById("result");
+
+  function update() {
+    result.textContent = inputbox.value;
+  }
+</script> -->
+
+<!-- TASK 02 -->
+<!-- <button onclick="update()">ADD</button>
+<div id="result"></div>
+
+<script>
+  var div = document.getElementById("result");
+
+  function update() {
+    var listitem = document.createElement("h1");
+    listitem.textContent = "Hello";
+    div.append(listitem);
+  }
+</script> -->
+
+<!-- TASK 03 -->
+<!-- <button id="btn" onclick="update()">Change Color</button>
+
+<script>
+  var btn = document.getElementById("btn");
+
+  function update() {
+    btn.style.backgroundColor = "red";
+  }
+</script> -->
+
+<!-- TASK 04 -->
+<!-- <h1 id="result">Name</h1>
+<button onclick="update(event)">John</button>
+<button onclick="update(event)">Karthik</button>
+<button onclick="update(event)">Saji</button>
+<script>
+  var h1 = document.getElementById("result");
+
+  function update() {
+    h1.textContent = event.target.textContent;
+  }
+</script> -->
+
+<!-- TASK 05 -->
+<!-- <h1 onclick="deleteitem(event)">One</h1>
+<h1 onclick="deleteitem(event)">Two</h1>
+<h1 onclick="deleteitem(event)">Three</h1>
+<h1 onclick="deleteitem(event)">Four</h1>
+<h1 onclick="deleteitem(event)">Five</h1>
+<h1 onclick="deleteitem(event)">Six</h1>
+ <button onclick="deleteitem()">DELETE</button> 
+
+<script>
+  var h1 = document.getElementById("one");
+  function deleteitem(event) {
+    // h1.remove();
+    event.target.remove();
+  }
+</script> -->
